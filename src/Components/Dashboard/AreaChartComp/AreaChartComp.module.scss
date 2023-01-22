@@ -1,0 +1,19 @@
+.container {
+    padding: 10px 0px;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        h4 {
+            text-align: left;
+            font-size: 22px;
+            letter-spacing: 0px;
+            color: #646464;
+            opacity: 1;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
+}

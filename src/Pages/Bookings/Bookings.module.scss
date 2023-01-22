@@ -1,0 +1,86 @@
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 20px 5px;
+    }
+    .nav {
+        margin: 25px 0px;
+        padding: 0px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #E6E6E6;
+        width: 70%;
+        .navItem, .activeNavItem {
+            display: flex;
+            margin-right: 30px;
+            padding: 0px 0px 15px 0px;
+            cursor: pointer;
+            h6 {
+                text-align: left;
+                font: normal normal bold 18px/22px ProximaNovaBold;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                margin: 0px 10px 0px 0px;
+            }
+            small {
+                margin: 0px;
+                padding: 0px 8px;
+                text-align: left;
+                font: normal normal normal 13px/18px Roboto;
+                letter-spacing: 0px;
+                color: #F7F8FA;
+                opacity: 1;
+                background: #EE405E 0% 0% no-repeat padding-box;
+                border-radius: 2px;
+            }
+        }
+        .activeNavItem {
+            border-bottom: 2px solid #EE405E;
+        }
+    }
+}
+
+// for mobile phones
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 20px 5px;
+    }
+    .nav {
+        margin: 25px 0px 0px 0px;
+        padding: 0px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid #E6E6E6;
+        width: 100%;
+        .navItem, .activeNavItem {
+            display: flex;
+            align-items: center;
+            margin-right: 0px;
+            padding: 0px 0px 10px 0px;
+            cursor: pointer;
+            h6 {
+                text-align: left;
+                font: normal normal bold 10px/14px ProximaNovaBold;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                margin: 0px 5px 0px 0px;
+            }
+            small {
+                margin: 0px;
+                padding: 0px 4px;
+                text-align: left;
+                font: normal normal normal 7px/12px Roboto;
+                letter-spacing: 0px;
+                color: #F7F8FA;
+                opacity: 1;
+                background: #EE405E 0% 0% no-repeat padding-box;
+                border-radius: 2px;
+            }
+        }
+        .activeNavItem {
+            border-bottom: 2px solid #EE405E;
+        }
+    }
+}

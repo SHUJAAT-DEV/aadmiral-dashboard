@@ -1,0 +1,163 @@
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 20px 30px;
+        .addContainer {
+            margin-bottom: 30px;
+        }
+        .fleetsContainer {
+            .fleet {
+                display: flex;
+                margin: 35px 0px;
+                .leftSection {
+                    width: 45%;
+                    .field {
+                        margin: 20px 0px 0px 0px;
+                        display: flex;
+                        label {
+                            width: 30%;
+                            text-align: left;
+                            font: normal normal normal 16px/20px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            opacity: 1;
+                            margin-top: 7px;
+                        }
+                        input {
+                            width: 70%;
+                            background: #F2F4F5 0% 0% no-repeat padding-box;
+                            border-radius: 4px;
+                            opacity: 1;
+                            border: none;
+                            outline: none;
+                            text-align: left;
+                            font: normal normal normal 14px/1px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #707070;
+                            padding: 10px 14px;
+                        }
+                }}
+                .middleSection {
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        width: 125px;
+                    }
+                    .hideInput {
+                        opacity: 0;
+                        margin: -28px -200px 0px 0px;
+                    }
+                    ._files {
+                        font-size: 12px;
+                        margin-top: 5px;
+                    }
+                }
+                .btnSection {
+                    width: 35%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    // icons
+                    img:nth-child(2) {
+                        margin-left: 14px;
+                    }
+                    img {
+                        cursor: pointer;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+        .btnContainer {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px;
+        }
+    }
+}
+
+// for mobile devices
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 20px 20px;
+        .addContainer {
+            margin-bottom: 30px;
+        }
+        .fleetsContainer {
+            .fleet {
+                display: flex;
+                flex-direction: column;
+                margin: 35px 0px;
+                .leftSection {
+                    width: 100%;
+                    order: 2;
+                    margin-bottom: 20px;
+                    .field {
+                        margin: 20px 0px 0px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            width: 100%;
+                            text-align: left;
+                            font: normal normal normal 16px/20px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            opacity: 1;
+                            margin-bottom: 10px;
+                        }
+                        input {
+                            width: 100%;
+                            max-width: 600px;
+                            background: #F2F4F5 0% 0% no-repeat padding-box;
+                            border-radius: 4px;
+                            opacity: 1;
+                            border: none;
+                            outline: none;
+                            text-align: left;
+                            font: normal normal normal 14px/1px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #707070;
+                            padding: 16px 14px;
+                        }
+                }}
+                .middleSection {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    order: 3;
+                    overflow: hidden;
+                    img {
+                        width: 125px;
+                    }
+                    .hideInput {
+                        opacity: 0;
+                        margin: -28px -200px 0px 0px;
+                    }
+                }
+                .btnSection {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    order: 1;
+                    // icons
+                    img:nth-child(2) {
+                        margin-left: 14px;
+                    }
+                    img {
+                        cursor: pointer;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+        .btnContainer {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px;
+        }
+    }
+}

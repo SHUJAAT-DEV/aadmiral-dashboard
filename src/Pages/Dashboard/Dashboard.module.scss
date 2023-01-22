@@ -1,0 +1,209 @@
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 20px 30px;
+        .textContainer {
+            h1 {
+                text-align: left;
+                font: normal normal bold 32px/39px ProximaNovaBold;
+                letter-spacing: 0px;
+                color: #232323;
+                opacity: 1
+            }
+            p {
+                text-align: left;
+                font: normal normal normal 22px/27px ProximaNovaBold;
+                letter-spacing: 0px;
+                color: #A5A7A9;
+                opacity: 1;
+            }
+        }
+        .cardsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0px;
+            .activeCard {
+                box-shadow: 0px 3px 10px #00000029;
+            }
+            .card, .activeCard {
+                cursor: pointer;
+                width: 31%;
+                border: 1px solid #707070;
+                display: flex;
+                justify-content: space-around;
+                padding: 18px 0px;
+                &:hover {
+                    box-shadow: 0px 3px 10px #00000029;
+                }
+                .leftSection {
+                    width: 40%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    img {
+                        width: 66px;
+                        border-radius: 50%;
+                        padding: 15px;
+                    }
+                }
+                .rightSection {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        text-align: center;
+                        font: normal normal normal 55px/50px ProximaNovaBold;
+                        letter-spacing: 0px;
+                        color: #473636;
+                        opacity: 1;
+                        margin: 0px;
+                        
+                    }
+                    small {
+                        text-align: center;
+                        font: normal normal bold 24px/26px ProximaNovaBold;
+                        letter-spacing: 0px;
+                        opacity: 1;
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+        .chartContainer {
+            padding: 25px 0px 0px 0px;
+        }
+    }
+}
+// Row
+.row_2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    .column_1 {
+        width: 49%;
+        text-align: left;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+    }
+    .column_2 {
+        margin-top: 20px;
+        width: 49%;
+        text-align: left;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+    }
+}
+
+// for mobile devices
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 20px 20px;
+        margin-top: 60px;
+        width: 100%;
+        .textContainer {
+            h1 {
+                text-align: left;
+                font: normal normal bold 32px/39px ProximaNovaBold;
+                letter-spacing: 0px;
+                color: #232323;
+                opacity: 1
+            }
+            p {
+                text-align: left;
+                font: normal normal normal 22px/27px ProximaNovaBold;
+                letter-spacing: 0px;
+                color: #A5A7A9;
+                opacity: 1;
+            }
+        }
+        .cardsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0px;
+            .activeCard {
+                box-shadow: 0px 3px 10px #00000029;
+            }
+            .card, .activeCard {
+                cursor: pointer;
+                width: 60%;
+                min-width: 250px;
+                border: 1px solid #707070;
+                display: flex;
+                justify-content: space-around;
+                padding: 18px 0px;
+                margin-bottom: 20px;
+                &:hover {
+                    box-shadow: 0px 3px 10px #00000029;
+                }
+                .leftSection {
+                    width: 40%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    img {
+                        width: 40px;
+                        border-radius: 50%;
+                        padding: 10px;
+                    }
+                }
+                .rightSection {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        text-align: center;
+                        font: normal normal normal 35px/30px ProximaNovaBold;
+                        letter-spacing: 0px;
+                        color: #473636;
+                        opacity: 1;
+                        margin: 5px;
+                        
+                    }
+                    small {
+                        text-align: center;
+                        font: normal normal bold 14px/16px ProximaNovaBold;
+                        letter-spacing: 0px;
+                        opacity: 1;
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+        .chartContainer {
+            padding: 0px 0px 0px 0px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+// Row
+.row_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    padding: 0px 20px;
+    .column_1 {
+        padding: 0px 20px;
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+    }
+    .column_2 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        display: flex;
+        padding: 20px 0px;
+        justify-content: center;
+    }
+}

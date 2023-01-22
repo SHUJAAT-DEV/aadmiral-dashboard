@@ -1,0 +1,198 @@
+@media only screen and (min-width: 768px) {
+    // all users container
+    .container {
+        padding: 35px 30px;
+        // user 
+        .userContainer {
+            display: flex;
+            margin: 0px 0px 35px 0px;
+            // left section
+            .leftSection {
+                display: flex;
+                width: 90%;
+                // form
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 65%;
+                    .field {
+                        margin: 7px 0px;
+                        display: flex;
+                        label {
+                            width: 30%;
+                            text-align: left;
+                            font: normal normal normal 16px/20px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            opacity: 1;
+                            margin-top: 5px;
+                        }
+                        input, textarea {
+                            width: 70%;
+                            background: #F2F4F5 0% 0% no-repeat padding-box;
+                            border-radius: 4px;
+                            opacity: 1;
+                            border: none;
+                            outline: none;
+                            text-align: left;
+                            font: normal normal normal 14px/1px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #707070;
+                            padding: 10px 14px;
+                        }
+                        .message {
+                            min-height: 100px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                // User's Page avatar container
+                .avatarContainer {
+                    width: 35%;
+                    padding: 5px 0px 0px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                        .avatar {
+                            width: 100px;
+                        }
+                    }
+                }
+                // contact list avatar container
+                .contact_avatarContainer {
+                    width: 35%;
+                    padding: 25px 0px 0px 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .avatarWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .avatar {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+            // right section
+            .rightSection {
+                width: 10%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                // icons
+                img:nth-child(2) {
+                    margin-left: 14px;
+                }
+                img {
+                    cursor: pointer;
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+// for mobile devices
+
+@media only screen and (max-width: 767px) {
+    // all users container
+    .container {
+        padding: 35px 20px;
+        // user 
+        .userContainer {
+            display: flex;
+            margin: 0px 0px 35px 0px;
+            // left section
+            .leftSection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                // form
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    order: 2;
+                    margin-top: 20px;
+                    .field {
+                        margin: 12px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            width: 100%;
+                            text-align: left;
+                            font: normal normal normal 16px/20px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #343434;
+                            opacity: 1;
+                            margin: 0px 0px 10px 0px;
+                        }
+                        input, textarea {
+                            width: 100%;
+                            max-width: 500px;
+                            background: #F2F4F5 0% 0% no-repeat padding-box;
+                            border-radius: 4px;
+                            opacity: 1;
+                            border: none;
+                            outline: none;
+                            text-align: left;
+                            font: normal normal normal 14px/1px ProximaNovaBold;
+                            letter-spacing: 0px;
+                            color: #707070;
+                            padding: 16px 14px;
+                        }
+                        .message {
+                            min-height: 100px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                // User's Page avatar container
+                .avatarContainer {
+                    width: 35%;
+                    padding: 5px 0px 0px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                        .avatar {
+                            width: 100px;
+                        }
+                    }
+                }
+                // contact list avatar container
+                .contact_avatarContainer {
+                    width: 100%;
+                    padding: 25px 0px 0px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .avatarWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .avatar {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+            // right section
+            .rightSection {
+                width: 10%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                margin-top: 20px;
+                // icons
+                img:nth-child(2) {
+                    margin-left: 14px;
+                }
+                img {
+                    cursor: pointer;
+                    width: 15px;
+                }
+            }
+        }
+    }

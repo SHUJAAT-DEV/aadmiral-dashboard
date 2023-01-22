@@ -1,0 +1,30 @@
+/* horizontal lines inside chart */
+.recharts-cartesian-grid-horizontal {
+    display: none;
+}
+/* axis line */
+.recharts-cartesian-axis-line {
+    display: none;
+}
+.recharts-cartesian-grid-vertical line:nth-child(1) {
+    display: none;
+}
+
+.recharts-cartesian-grid-vertical line {
+    opacity: 0.5;
+}
+.recharts-surface circle {
+    fill: #24AEFC;
+    stroke-width: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .recharts-wrapper {
+        width: 300px !important;
+        height: 200px !important;
+    }
+    .recharts-surface {
+        width: 300px !important;
+        height: 200px !important;
+    }
+}
