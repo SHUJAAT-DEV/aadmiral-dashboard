@@ -3,6 +3,7 @@ const path = require("path");
 const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 60;
+console.log("testing")
 class Server {
   constructor() {
     this.initMiddlewares();
@@ -26,7 +27,7 @@ class Server {
       res.sendFile(path.resolve(__dirname, "./build/index.html"));
     });
   }
-  
+
   start() {
     app.listen(port, () => console.log(`server is live on port ${port}`));
   }
