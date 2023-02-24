@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import SideNav from "../Components/SideNav/SideNav";
 import TopNav from "../Components/TopNav/TopNav";
 import Users from "../Pages/Users/Users";
 import StaffMembers from "../Pages/StaffMembers";
 
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ContentManagment from "../Pages/Content-managment/ContentManagment";
 import News from "../Pages/News/News";
 import Content from "../Pages/Services/GalvestonCruise/Content/Content";
@@ -152,6 +152,8 @@ import SpringCarServiceCreate from "../Pages/Cities/CityHouston/SpringCarService
 import FulshearCarService from "../Pages/Cities/CityHouston/FulshearCarService/FulshearCarService";
 import FulshearCarServiceCreate from "../Pages/Cities/CityHouston/FulshearCarServiceCreate/FulshearCarServiceCreate";
 import Profile from "../Pages/Profile";
+import Services from "../Pages/dynamicservices/Services";
+import EditServicesMain from "../Pages/dynamicservices/EditServiceMain";
 
 function AppRoutes() {
   const [show, setShow] = useState(true);
@@ -173,6 +175,14 @@ function AppRoutes() {
             exact
             path="/profile"
             component={Profile}></PrivateRoute>
+          <PrivateRoute
+            exact
+            path="/services"
+            component={Services}></PrivateRoute>
+          <PrivateRoute
+            exact
+            path="/services/:id"
+            component={EditServicesMain}></PrivateRoute>
           <PrivateRoute
             exact
             path="/content"
@@ -217,7 +227,6 @@ function AppRoutes() {
             exact
             path="/houston-to-victoria-create"
             component={HoustonToVictoriaCreate}></PrivateRoute>
-
           <PrivateRoute
             exact
             path="/city-to-city-transfer-create"
@@ -374,7 +383,6 @@ function AppRoutes() {
             path="/bachelorparty-view"
             component={BachelorPartyView}></PrivateRoute>
           {/* new */}
-
           <PrivateRoute
             exact
             path="/bachelorette-party"
@@ -399,7 +407,6 @@ function AppRoutes() {
             exact
             path="/wedding-limo-view"
             component={WeddingLimoView}></PrivateRoute>
-
           {/* Cities */}
           <PrivateRoute
             exact
@@ -521,7 +528,6 @@ function AppRoutes() {
             exact
             path="/staff-members"
             component={StaffMembers}></PrivateRoute>
-
           <PrivateRoute
             exact
             path="/contact-list"

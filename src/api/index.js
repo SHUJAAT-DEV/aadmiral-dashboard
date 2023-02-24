@@ -129,17 +129,17 @@ export const addFaq = (faq) =>
       "content-type": "application/json",
     },
   });
-  // add news
+// add news
 export const addNews = (news) =>
-axios.post(`${URL}/admin/newnews/add-news`, news, {
-  headers: {
-    "content-type": "application/json",
-  },
-});
+  axios.post(`${URL}/admin/newnews/add-news`, news, {
+    headers: {
+      "content-type": "application/json",
+    },
+  });
 // fetch news
 export const fetchNews = () => axios.get(`${URL}/website-content/getnews/news`);
 // delete news
-export const deleteNews= (id) => axios.delete(`${URL}/admin/delbyid/delete-news/${id}`);
+export const deleteNews = (id) => axios.delete(`${URL}/admin/delbyid/delete-news/${id}`);
 
 // fetch faq
 export const fetchFaq = () => axios.get(`${URL}/website-content/faqs`);
@@ -154,8 +154,8 @@ export const updateFaq = (updatedFaq) =>
 // *** Blog ***
 
 // add blog
-export const addBlog = (blog) => 
-axios.post(`${URL}/Blogs/Add/add-blog/new`, blog);
+export const addBlog = (blog) =>
+  axios.post(`${URL}/Blogs/Add/add-blog/new`, blog);
 // fetch blog
 export const fetchBlog = () => axios.get(`${URL}/website-content/blogs`);
 
@@ -186,6 +186,14 @@ export const updateHoustonHobby = (data) =>
 // fetch Galveston
 export const fetchGalveston = () =>
   axios.get(`${URL}/website-content/galveston-cruise-transfer`);
+
+export const fetchServicesPages = () =>
+  axios.get(`${URL}/admin/services`);
+
+
+export const createServicesPages = (sericesPage) =>
+  axios.post(`${URL}/admin/services`, sericesPage);
+
 
 // update Galveston
 export const updateGalveston = (updatedGalveston) =>
@@ -506,7 +514,7 @@ export const fetchSingleBooking = (id) =>
 
 // mark as complete
 export const markAsComplete = (id) =>
-  axios.post(`${URL}/booking/mark-completed`, {id}, {
+  axios.post(`${URL}/booking/mark-completed`, { id }, {
     headers: {
       "Content-Type": "application/json",
     },
@@ -549,6 +557,10 @@ export const fetchHome = () => axios.get(`${URL}/website-content/home`);
 // update HomePage
 export const updateHome = (data) => axios.post(`${URL}/admin/home-page`, data);
 
+// update services
+export const updateService = (data) => axios.post(`${URL}/admin/services/detail`, data);
+export const getService = (id) => axios.get(`${URL}/admin/services/${id}`);
+
 // Fetch About Page
 export const fetchAbout = () =>
   axios.get(`${URL}/website-content/about-us-page`);
@@ -561,9 +573,9 @@ export const updateAbout = (data) =>
 export const refundRequestAPI = (id) =>
   axios.get(`${URL}/booking/refund-request/${id}`);
 
-  export const fetchHoustonToLakeJackson = () =>
+export const fetchHoustonToLakeJackson = () =>
   axios.get(`${URL}/website-content/houston-to-lakejackson`);
-  export const updateHoustonToLakeJackson = (updatedHoustonToLakeJackson) =>
+export const updateHoustonToLakeJackson = (updatedHoustonToLakeJackson) =>
   axios.post(
     `${URL}/admin/houston-to-lakejackson`,
     updatedHoustonToLakeJackson,
@@ -573,9 +585,9 @@ export const refundRequestAPI = (id) =>
       },
     }
   );
-  export const fetchHoustonToVictoria = () =>
+export const fetchHoustonToVictoria = () =>
   axios.get(`${URL}/website-content/houston-to-victoria`);
-  export const updateHoustonToVictoria = (updatedHoustonToVictoria) =>
+export const updateHoustonToVictoria = (updatedHoustonToVictoria) =>
   axios.post(
     `${URL}/admin/houston-to-victoria`,
     updatedHoustonToVictoria,
@@ -585,13 +597,13 @@ export const refundRequestAPI = (id) =>
       },
     }
   );
-  export const fetchSpringCarService = () =>
+export const fetchSpringCarService = () =>
   axios.get(`${URL}/website-content/spring-car-service`);
 
 export const updateSpringCarService = (data) =>
   axios.post(`${URL}/admin/spring-car-service`, data);
 
-  export const fetchFulshearCarService = () =>
+export const fetchFulshearCarService = () =>
   axios.get(`${URL}/website-content/fulshear-car-service`);
 
 export const updateFulshearCarService = (data) =>

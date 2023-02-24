@@ -11,6 +11,10 @@ export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case GalvestonActionTypes.FETCH_GALVESTON:
       return { ...state, loading: false, data: action.payload };
+    case GalvestonActionTypes.FETCH_SERVICES_PAGES:
+      return { ...state, loading: false, pageData: action.payload };
+    case GalvestonActionTypes.CREATE_SERVICES_PAGES:
+      return { ...state, loading: false, data: action.payload };
     case GalvestonActionTypes.FETCH_GALVESTON_ERROR:
       return { ...state, loading: false, error: action.payload };
     case GalvestonActionTypes.UPDATE_GALVESTON:
