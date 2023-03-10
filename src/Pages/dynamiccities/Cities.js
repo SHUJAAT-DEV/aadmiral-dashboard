@@ -62,7 +62,7 @@ function Services() {
           <div className="main_start_datat">
             <div className="data_content">
               <div style={{ marginBottom: '2rem', float: 'right' }}>
-                <Button icon={<UserAddOutlined />} onClick={() => setIsVissible(true)}> Add Service</Button>
+                <Button icon={<UserAddOutlined />} onClick={() => setIsVissible(true)}> Add City</Button>
               </div>
               <Table
                 columns={columns}
@@ -74,7 +74,7 @@ function Services() {
         </div>
       </section>
       <Modal
-        title="Create New Service Page"
+        title="Create New City Page"
         open={isVisible}
         footer={[
           <Button form="serviceForm" key="submit" htmlType="submit">

@@ -598,7 +598,7 @@ function SideNav({ onClick }) {
                   <Link to="/cities">
                     <p>Cities</p>
                   </Link>
-                  <p
+                  {/* <p
                     onClick={() => setIsOpenCities(toggleCities)}
                     className={styles.link}>
                     Cities<i class="fas fa-caret-down"></i>
@@ -640,7 +640,7 @@ function SideNav({ onClick }) {
                     <Link to="/katy-view">
                       <p>Katy Service</p>
                     </Link>
-                  </Collapse>
+                  </Collapse> */}
                   <Link to="/home-page-view">
                     <p>Home</p>
                   </Link>
