@@ -548,14 +548,7 @@ function SideNav({ onClick }) {
                 <p className={styles.link}>Dashboard</p>
               </div>
             </Link>
-            <Link to="/services" className={styleHandler("/services")}>
-              <div className={styles.iconContainer}>
-                <Booking className={styles.icon} width="100%" />
-              </div>
-              <div className={styles.linkContainer}>
-                <p className={styles.link}>Servies</p>
-              </div>
-            </Link>
+
             <Link to="/booking" className={styleHandler("/booking")}>
               <div className={styles.iconContainer}>
                 <Booking className={styles.icon} width="100%" />
@@ -599,134 +592,12 @@ function SideNav({ onClick }) {
                   Content Managment<i class="fas fa-caret-down"></i>
                 </p>
                 <Collapse isOpen={isOpenContent}>
-                  <p
-                    onClick={() => setIsOpenServices(toggleServices)}
-                    className={styles.link}>
-                    Services<i class="fas fa-caret-down"></i>
-                  </p>
-                  <Collapse isOpen={isOpenServices}>
-                    <p
-                      onClick={() => setIsOpenHouston(toggleHouston)}
-                      className={styles.link}>
-                      Houston Airport<i class="fas fa-caret-down"></i>
-                    </p>
-
-                    <Collapse isOpen={isOpenHouston}>
-                      <Link to="/airport-transportation-houston-view">
-                        <p>Houston Airport Transportation</p>
-                      </Link>
-                      <Link to="/george-bush-view">
-                        <p>GeorgeBush Airport</p>
-                      </Link>
-                      <Link to="/houston-hobby-view">
-                        <p>Hobby Airport</p>
-                      </Link>
-                      <Link to="/private-jet-view">
-                        <p>Private Aviation</p>
-                      </Link>
-                    </Collapse>
-                    <Link to="/services-view">
-                      <p>
-                        Services<small>(View Create)</small>
-                      </p>
-                    </Link>
-                    <Link to="/content-view">
-                      <p>Galveston Cruise</p>
-                    </Link>
-                    <p
-                      onClick={() => setIsOpenCity(toggleCity)}
-                      className={styles.link}>
-                      City to City Transfer<i class="fas fa-caret-down"></i>
-                    </p>
-                    <Collapse isOpen={isOpenCity}>
-                      <Link to="/houston-to-college-view">
-                        <p>Houston to College</p>
-                      </Link>
-                      <Link to="/houston-to-lake-jackson">
-                        <p>Houston to Lake Jackson</p>
-                      </Link>
-                      <Link to="/houston-to-victoria">
-                        <p>Houston to Victoria</p>
-                      </Link>
-                      {/* <Link to="/houston-to-lake-jackson-create">
-                     <p>Houston to Lake Jackson <small>(View Create)</small> </p>
-                   </Link> */}
-                      <Link to="/city-to-city-transfer-view">
-                        <p>
-                          City to City Transfer<small>(View Create)</small>
-                        </p>
-                      </Link>
-                      <Link to="/houston-to-austin-view">
-                        <p>Houston to Austin</p>
-                      </Link>
-                      <Link to="/houston-to-dallas-view">
-                        <p>Houston to Dallas</p>
-                      </Link>
-                      <Link to="/houston-to-santonio-view">
-                        <p>Houston to SanAntonio</p>
-                      </Link>
-                      <Link to="/houston-to-lakecharles-view">
-                        <p>Houston to LakeCharles</p>
-                      </Link>
-                      <Link to="/houston-to-lafayette-view">
-                        <p>Houston to Lafayette</p>
-                      </Link>
-                    </Collapse>
-                    <p
-                      onClick={() => setIsOpenEvents(toggleEvents)}
-                      className={styles.link}>
-                      Events Transfer<i class="fas fa-caret-down"></i>
-                    </p>
-                    <Collapse isOpen={isOpenEvents}>
-                      <Link to="/businessconvention-view">
-                        <p>Business Conventions</p>
-                      </Link>
-                      <Link to="/sports-events-transfer-view">
-                        <p>Sports Events</p>
-                      </Link>
-                      <Link to="/events">
-                        <p>
-                          Events<small>(View Create)</small>
-                        </p>
-                      </Link>
-                      <Link to="/concerts-transfer-view">
-                        <p>Concerts</p>
-                      </Link>
-                      <Link to="/houstonrodeo-view">
-                        <p>Houston Rodeo</p>
-                      </Link>
-                    </Collapse>
-                    <p
-                      onClick={() => setIsOpenCelebration(toggleCelebration)}
-                      className={styles.link}>
-                      Celebration Transfer<i class="fas fa-caret-down"></i>
-                    </p>
-                    <Collapse isOpen={isOpenCelebration}>
-                      <Link to="/party-view">
-                        <p>Party</p>
-                      </Link>
-                      <Link to="/graduation-view">
-                        <p>Graduation Party</p>
-                      </Link>
-                      <Link to="/celebration">
-                        <p>
-                          Celebration<small>(View Create)</small>
-                        </p>
-                      </Link>
-                      <Link to="/bachelorparty-view">
-                        <p>Bachelor Party</p>
-                      </Link>
-                      {/* <Link to="/bachelorette-party-view">
-                     <p>Bachelorette Party</p>
-                   </Link> */}
-                      {/* <Link to="/prom-limo-view">
-                     <p>Prom Limo</p>
-                   </Link>
-                   <Link to="/wedding-limo-view">
-                     <p>Wedding Limo</p>
-                   </Link> */}
-                    </Collapse>
-                  </Collapse>
+                  <Link to="/services">
+                    <p>Services</p>
+                  </Link>
+                  <Link to="/cities">
+                    <p>Cities</p>
+                  </Link>
                   <p
                     onClick={() => setIsOpenCities(toggleCities)}
                     className={styles.link}>

@@ -190,6 +190,8 @@ export const fetchGalveston = () =>
 export const fetchServicesPages = () =>
   axios.get(`${URL}/admin/services`);
 
+export const fetchCitiesPages = () =>
+  axios.get(`${URL}/admin/cities`);
 
 export const createServicesPages = (sericesPage) =>
   axios.post(`${URL}/admin/services`, sericesPage);

@@ -153,7 +153,9 @@ import FulshearCarService from "../Pages/Cities/CityHouston/FulshearCarService/F
 import FulshearCarServiceCreate from "../Pages/Cities/CityHouston/FulshearCarServiceCreate/FulshearCarServiceCreate";
 import Profile from "../Pages/Profile";
 import Services from "../Pages/dynamicservices/Services";
+import Cities from "../Pages/dynamiccities/Cities";
 import EditServicesMain from "../Pages/dynamicservices/EditServiceMain";
+import EditCitiesMain from "../Pages/dynamiccities/EditCitiesMain";
 
 function AppRoutes() {
   const [show, setShow] = useState(true);
@@ -183,6 +185,11 @@ function AppRoutes() {
             exact
             path="/services/:id"
             component={EditServicesMain}></PrivateRoute>
+          <PrivateRoute exact path="/cities" component={Cities}></PrivateRoute>
+          <PrivateRoute
+            exact
+            path="/cities/:id"
+            component={EditCitiesMain}></PrivateRoute>
           <PrivateRoute
             exact
             path="/content"

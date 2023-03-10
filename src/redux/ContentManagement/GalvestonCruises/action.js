@@ -22,13 +22,24 @@ export const getGalveston = () => async (dispatch) => {
 export const getServicesPages = () => async (dispatch) => {
     try {
         const data = await api.fetchServicesPages()
-        console.log("getServicesPages", data)
         dispatch({ type: GalvestonActionTypes.FETCH_SERVICES_PAGES, payload: data })
     } catch (error) {
         console.log(error);
         dispatch({ type: GalvestonActionTypes.FETCH_GALVESTON_ERROR, payload: error })
     }
 }
+
+
+export const getCitiesPages = () => async (dispatch) => {
+    try {
+        const data = await api.fetchCitiesPages()
+        dispatch({ type: GalvestonActionTypes.FETCH_CITIES_PAGES, payload: data })
+    } catch (error) {
+        console.log(error);
+        dispatch({ type: GalvestonActionTypes.FETCH_GALVESTON_ERROR, payload: error })
+    }
+}
+
 export const createSericesPage = (servicesPage) => async (dispatch) => {
     try {
         const data = await api.createServicesPages(servicesPage)

@@ -13,6 +13,8 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state, loading: false, data: action.payload };
     case GalvestonActionTypes.FETCH_SERVICES_PAGES:
       return { ...state, loading: false, pageData: action.payload };
+    case GalvestonActionTypes.FETCH_CITIES_PAGES:
+      return { ...state, loading: false, pageCityData: action.payload };
     case GalvestonActionTypes.CREATE_SERVICES_PAGES:
       return { ...state, loading: false, data: action.payload };
     case GalvestonActionTypes.FETCH_GALVESTON_ERROR:
