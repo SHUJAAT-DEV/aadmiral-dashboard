@@ -89,7 +89,7 @@ const EditServices = ({ defaultFormValues }) => {
     formData.append("thirdSectionTitle", data.thirdSectionTitle);
     formData.append("thirdSectionDescription", data.thirdSectionDescription);
     formData.append("thirdImage", data.thirdImage);
-    dispatch(updateServices(formData));
+    dispatch(updateServices(formData, id));
   };
 
 

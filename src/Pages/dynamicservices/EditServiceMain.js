@@ -37,7 +37,6 @@ function EditServicesMain() {
   }, [dispatch, id]);
 
   const initialData = getServiceDetail ? getServiceDetail : initialValues
-  console.log("getServiceDetail", loading, getServiceDetail, initialData)
 
   return loading ? (
     <Loader />

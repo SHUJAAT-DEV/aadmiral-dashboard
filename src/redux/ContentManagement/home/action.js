@@ -28,10 +28,11 @@ export const updateHome = (home) => async (dispatch) => {
 }
 
 // update services
-export const updateServices = (service) => async (dispatch) => {
+export const updateServices = (service, id) => async (dispatch) => {
     try {
         dispatch({ type: HomeActionTypes.LOADING, payload: {} })
         const { data } = await api.updateService(service)
+        await getServicesById(id);
         dispatch({ type: HomeActionTypes.UPDATE_SERVICES_DETAIL, payload: data })
     } catch (error) {
         console.log(error);

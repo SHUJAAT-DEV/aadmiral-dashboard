@@ -11,22 +11,64 @@ const ReuseableTable = ({ headings, data }) => {
           <thead>
             <tr className={styles.tableHeading}>
               {headings.map((heading) => (
-                <th scope="col">{heading}</th>
+                <th scope="col" key={heading}>
+                  {heading}
+                </th>
               ))}
             </tr>
           </thead>
           <tbody>
             {data.map((product) => (
               <tr key={product._id} className={styles.tableData}>
-                {<td data-label="name">{product.accountDetails && product.accountDetails.fullName}</td>}
-                {<td data-label="email">{product.accountDetails && product.accountDetails.email}</td>}
-                {<td data-label="book-number">{product.accountDetails && product.bookingId}</td>}
-                {<td data-label="car-name">{product.accountDetails && product.car.name}</td>}
-                {<td data-label="from">{product.accountDetails && product.bookingType.from}</td>}
-                {<td data-label="to">{product.accountDetails && product.bookingType.to}</td>}
-                {<td data-label="date">{product.accountDetails && product.bookingType.date}</td>}
-                {<td data-label="time">{product.accountDetails && product.bookingType.time}</td>}
-                {<td data-label="price">{product.accountDetails && product.amount}</td>}
+                {
+                  <td data-label="name">
+                    {product.accountDetails && product.accountDetails?.fullName
+                      ? product.accountDetails.fullName
+                      : product.accountDetails?.passangerName}
+                  </td>
+                }
+                {
+                  <td data-label="email">
+                    {product.accountDetails && product.accountDetails?.email
+                      ? product.accountDetails.email
+                      : product.accountDetails.passangerEmail}
+                  </td>
+                }
+                {
+                  <td data-label="book-number">
+                    {product.accountDetails && product.bookingId}
+                  </td>
+                }
+                {
+                  <td data-label="car-name">
+                    {product.accountDetails && product.car.name}
+                  </td>
+                }
+                {
+                  <td data-label="from">
+                    {product.accountDetails && product.bookingType.from}
+                  </td>
+                }
+                {
+                  <td data-label="to">
+                    {product.accountDetails && product.bookingType.to}
+                  </td>
+                }
+                {
+                  <td data-label="date">
+                    {product.accountDetails && product.bookingType.date}
+                  </td>
+                }
+                {
+                  <td data-label="time">
+                    {product.accountDetails && product.bookingType.time}
+                  </td>
+                }
+                {
+                  <td data-label="price">
+                    {product.accountDetails && product.amount}
+                  </td>
+                }
                 <td data-label="status">
                   <StatusBtn
                     id={product._id}

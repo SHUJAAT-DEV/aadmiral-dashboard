@@ -82,7 +82,6 @@ function Services() {
 
 
   const tableData = pageData && pageData.data ? pageData.data : [];
-  console.log("Services", tableData);
 
   return (
     <div className="main_align_container">
